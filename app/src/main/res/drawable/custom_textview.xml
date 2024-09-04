@@ -6,9 +6,9 @@
     <size android:height="30dp"
         android:width="30dp"/>
     <solid
-        android:color="@color/button2_text" />
+        android:color="@color/button_text" />
     <stroke
-        android:color="@color/button"
+        android:color="@color/gray_400"
         android:dashWidth="10px"
         android:dashGap="0dp"
         android:width="2dp"/>

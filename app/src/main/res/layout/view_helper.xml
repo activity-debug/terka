@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/btnHand"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/shape_game_helper_active"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hand_point_up_solid" />
+
+    <ImageView
+        android:id="@+id/btnRobot"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_game_helper_active"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btnHand"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/robot_solid" />
+
+    <ImageView
+        android:id="@+id/btnHammer"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_game_helper_active"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btnRobot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hammer_solid" />
+
+    <ImageView
+        android:id="@+id/btnFlip"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_game_helper_active"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btnHammer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_game_tool1" />
+
+    <ImageView
+        android:id="@+id/btnNinja"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_game_helper_active"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btnFlip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_ninja_solid" />
+</androidx.constraintlayout.widget.ConstraintLayout>

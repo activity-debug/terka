@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/key1"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key3"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key4"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key5"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key6"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key7"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key8"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key7"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key9"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key10"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key9"
+        app:layout_constraintTop_toBottomOf="@+id/key2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key11"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="11"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key10"
+        app:layout_constraintTop_toBottomOf="@+id/key3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key12"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="12"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key11"
+        app:layout_constraintTop_toBottomOf="@+id/key4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key13"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="13"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key12"
+        app:layout_constraintTop_toBottomOf="@+id/key5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key14"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="13"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key13"
+        app:layout_constraintTop_toBottomOf="@+id/key6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key15"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="15"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key14"
+        app:layout_constraintTop_toBottomOf="@+id/key7"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/key16"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_textview"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="16"
+        android:textColor="@color/button_color_menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/key15"
+        app:layout_constraintTop_toBottomOf="@+id/key8"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

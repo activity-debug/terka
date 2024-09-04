@@ -12,7 +12,7 @@
         android:type="linear"
         />
     <stroke
-        android:color="@color/button2_text"
+        android:color="#B39DDB"
         android:dashWidth="10px"
         android:dashGap="0dp"
         android:width="2dp"/>
