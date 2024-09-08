@@ -5,5 +5,7 @@ class Const {
 
     companion object {
         var terkaSet = TerkaSet.PLAY
+
+        var position = 0
     }
 }

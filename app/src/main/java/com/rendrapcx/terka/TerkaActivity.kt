@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.rendrapcx.terka.databinding.ActivityTerkaBinding
@@ -38,12 +39,37 @@ class TerkaActivity : AppCompatActivity() {
             binding.terkaLima.visibility = View.GONE
         }
 
-        binding.includeViewTopPanel.imgBackButton.setOnClickListener(){
+        binding.includeViewTopPanel.imgBackButton.setOnClickListener() {
             val intent = Intent(this@TerkaActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
 
+        binding.includeViewBoxSoal.viewBoxSoal.setOnClickListener() {
+            for (i in 0 until box.size) {
+                box[i].setOnClickListener() {
+                    Const.position = i
+                    onBoxClick()
+                }
+            }
+        }
+
+
+    }
+
+    private fun onBoxClick() {
+        onBoxReset()
+        onBoxSelected()
+    }
+
+    private fun onBoxSelected() {
+        box[Const.position].background = ContextCompat.getDrawable(this, R.drawable.box_shape_selected)
+    }
+
+    private fun onBoxReset() {
+        for (i in 0 until box.size) {
+            box[i].background = ContextCompat.getDrawable(this, R.drawable.box_shape_active)
+        }
     }
 
     private fun initkey() {
