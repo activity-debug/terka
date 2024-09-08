@@ -2,6 +2,7 @@ package com.rendrapcx.terka
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -57,13 +58,33 @@ class TerkaActivity : AppCompatActivity() {
 
     }
 
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        val x = Const.position
+        val s = event?.displayLabel
+
+        when (keyCode) {
+            /* a..z */
+            in 29..54 -> {
+                box[x].text = s.toString()
+            }
+            /* Backspace */
+            67 -> {
+                box[x].text = ""
+            }
+            else -> return false
+        }
+
+        return super.onKeyDown(keyCode, event)
+    }
+
     private fun onBoxClick() {
         onBoxReset()
         onBoxSelected()
     }
 
     private fun onBoxSelected() {
-        box[Const.position].background = ContextCompat.getDrawable(this, R.drawable.box_shape_selected)
+        box[Const.position].background =
+            ContextCompat.getDrawable(this, R.drawable.box_shape_selected)
     }
 
     private fun onBoxReset() {
