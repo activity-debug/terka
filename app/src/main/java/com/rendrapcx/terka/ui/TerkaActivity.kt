@@ -1,4 +1,4 @@
-package com.rendrapcx.terka
+package com.rendrapcx.terka.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.rendrapcx.terka.constant.Const
+import com.rendrapcx.terka.R
 import com.rendrapcx.terka.databinding.ActivityTerkaBinding
 
 class TerkaActivity : AppCompatActivity() {

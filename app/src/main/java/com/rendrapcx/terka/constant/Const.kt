@@ -1,4 +1,4 @@
-package com.rendrapcx.terka
+package com.rendrapcx.terka.constant
 
 class Const {
     enum class TerkaSet {PLAY, EDITOR}

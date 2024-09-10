@@ -1,4 +1,4 @@
-package com.rendrapcx.terka
+package com.rendrapcx.terka.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.rendrapcx.terka.constant.Const
 import com.rendrapcx.terka.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
